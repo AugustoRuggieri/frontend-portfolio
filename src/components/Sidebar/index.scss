@@ -1,0 +1,120 @@
+.nav-bar {
+    background: #393939;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    overflow-x: hidden;
+    min-height: 500px;
+    height: 100%;
+    width: 60px;
+
+    transition: all .5s;
+}
+
+.nav-bar:hover {
+    width: 180px;
+
+    img {
+        transform: scale(2.6);
+    }
+
+    .slide-text::before {
+        animation: textslidein .8s ease forwards;
+        animation-delay: .2s;
+    }
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    overflow: hidden;
+
+    a {
+        margin-bottom: 10px;
+        text-decoration: none;
+    }
+}
+
+.nav-link {
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 18px;
+
+}
+
+.logo {
+    display: block;
+    margin-top: 25px;
+    padding: 8px 0;
+
+    img {
+        border-radius: 25px;
+        display: block;
+        margin: 8px auto;
+        width: 24px;
+        transition: all .6s;
+    }
+}
+
+.ext-links {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+
+    li {
+        margin-top: 10px;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+.slide-text {
+    position: relative;
+    margin-left: 20px;
+}
+
+.slide-text::before,
+.slide-text::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.slide-text::before {
+    background: #393939;
+    animation: textslideout .4s ease forwards;
+}
+
+@keyframes textslidein {
+
+    from {
+        left: 0;
+    }
+    
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes textslideout {
+
+    from {
+        left: 100%;
+    }
+    
+    to {
+        left: 0;
+    }
+}
