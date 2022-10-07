@@ -8,15 +8,11 @@
     height: 100%;
     width: 60px;
 
-    transition: all .5s;
+    transition: width .5s ease-out;
 }
 
 .nav-bar:hover {
     width: 180px;
-
-    img {
-        transform: scale(2.6);
-    }
 
     .slide-text::before {
         animation: textslidein .8s ease forwards;
@@ -43,21 +39,23 @@ nav {
     display: flex;
     align-items: center;
     padding-left: 18px;
+    line-height: 45px;
 
+    .icon {
+        opacity: 1;
+        transition-duration: .4s;
+        transition-property: opacity;
+    }
+
+    &:hover .icon {
+        opacity: .4;
+    }
 }
 
 .logo {
     display: block;
     margin-top: 25px;
     padding: 8px 0;
-
-    img {
-        border-radius: 25px;
-        display: block;
-        margin: 8px auto;
-        width: 24px;
-        transition: all .6s;
-    }
 }
 
 .ext-links {
@@ -102,7 +100,7 @@ nav {
     from {
         left: 0;
     }
-    
+
     to {
         left: 100%;
     }
@@ -113,7 +111,7 @@ nav {
     from {
         left: 100%;
     }
-    
+
     to {
         left: 0;
     }

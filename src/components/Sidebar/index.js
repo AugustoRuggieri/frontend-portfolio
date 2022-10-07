@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import logo from '../../assets/logo.jpg'
 import './index.scss'
 import HomeIcon from '@mui/icons-material/Home';
 import PersonIcon from '@mui/icons-material/Person';
@@ -12,7 +11,7 @@ const Sidebar = () => {
     return (
         <div className='nav-bar'>
             <Link className='logo'>
-                <img src={logo} />
+                
             </Link>
             <nav>
                 <NavLink to='/' className='nav-link'>

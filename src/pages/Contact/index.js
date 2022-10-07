@@ -24,30 +24,30 @@ const Contact = () => {
     return (
         <>
             <div className='container contact'>
-                <div className='text'>
+                <div className='text-zone'>
+                    <div className='contact-form'>
+                        <form ref={form} onSubmit={sendEmail}>
+                            <ul>
+                                <li className='half'>
+                                    <input type='text' name='from_name' placeholder='Name' required />
+                                </li>
+                                <li className='half'>
+                                    <input type='email' name='email' placeholder='Email' required />
+                                </li>
+                                <li>
+                                    <input type='text' name='subject' placeholder='Subject' required />
+                                </li>
+                                <li>
+                                    <textarea type='text' name='message' placeholder='Your message' required />
+                                </li>
+                                <li>
+                                    <input type='submit' className='submit-btn' value='SEND' />
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
 
-                </div>
-                <div className='contact-form'>
-                    <form ref={form} onSubmit={sendEmail}>
-                        <ul>
-                            <li className='half'>
-                                <input type='text' name='from_name' placeholder='Name' required />
-                            </li>
-                            <li className='half'>
-                                <input type='email' name='email' placeholder='Email' required />
-                            </li>
-                            <li>
-                                <input type='text' name='subject' placeholder='Subject' required />
-                            </li>
-                            <li>
-                                <textarea type='text' name='message' placeholder='Your message' required />
-                            </li>
-                            <li>
-                                <input type='submit' className='submit-btn' value='SEND' />
-                            </li>
-                        </ul>
-                    </form>
-                </div>
                 <div className='info-map'>
                     Augusto Ruggieri
                     <br />
@@ -59,6 +59,7 @@ const Contact = () => {
                     <br />
                     <span>augustoruggieri@gmail.com</span>
                 </div>
+
                 <div className='map-wrap'>
                     <MapContainer center={[44.50881779475319, 11.343264185949348]} zoom={13} scrollWheelZoom={false}>
                         <TileLayer url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png' />

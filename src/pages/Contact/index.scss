@@ -1,33 +1,33 @@
 .contact-form {
     width: 100%;
     margin-top: 20px;
-}
 
-ul {
-    padding: 0;
-    margin: 0;
-
-    li {
+    ul {
         padding: 0;
         margin: 0;
-        list-style: none;
-        margin-bottom: 10px;
-        overflow: hidden;
-        display: block;
-        position: relative;
-        animation: fadeInUp 2s 2s;
-        animation-fill-mode: forwards;
-        clear: both;
-    }
-
-    li.half {
-        width: 49%;
-        margin-left: 2%;
-        float: left;
-        clear: none;
-
-        &:first-child {
-            margin-left: 0;
+    
+        li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            margin-bottom: 10px;
+            overflow: hidden;
+            display: block;
+            position: relative;
+            animation: fadeInUp 2s 2s;
+            animation-fill-mode: forwards;
+            clear: both;
+        }
+    
+        li.half {
+            width: 49%;
+            margin-left: 2%;
+            float: left;
+            clear: none;
+    
+            &:first-child {
+                margin-left: 0;
+            }
         }
     }
 }
@@ -36,7 +36,7 @@ input[type='text'],
 input[type='email'] {
     width: 100%;
     border: 0;
-    background: #115173;
+    background: #393939;
     height: 50px;
     font-size: 16px;
     color: #fff;
@@ -45,7 +45,7 @@ input[type='email'] {
 }
 
 textarea {
-    background: #115173;
+    background: #393939;
     border: 0;
     width: 100%;
     height: 50px;
@@ -57,7 +57,7 @@ textarea {
 }
 
 .submit-btn {
-    color: #ffd700;
+    color: #393939;
     background: 0 0;
     font-size: 11px;
     letter-spacing: 3px;
@@ -65,9 +65,10 @@ textarea {
     text-decoration: none;
     text-transform: uppercase;
     padding: 8px 10px;
-    border: 1px solid #ffd700;
+    border: 1px solid #393939;
     float: right;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .map-wrap {

@@ -14,3 +14,14 @@
     left: 15%;
     margin: 0 auto;
 }
+
+.text-zone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35%;
+    vertical-align: middle;
+    display: table-cell;
+    max-height: 90%;
+  }

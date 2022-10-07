@@ -1,9 +1,9 @@
 import './App.scss';
 import { Route, Routes } from 'react-router-dom';
 import Layout from './components/Layout/index';
-import Home from './components/Home/index';
-import About from './components/About/index';
-import Contact from './components/Contact/index';
+import Home from './pages/Home/index';
+import About from './pages/About/index';
+import Contact from './pages/Contact/index';
 
 function App() {
   return (
