@@ -25,6 +25,8 @@ const Contact = () => {
         <>
             <div className='container contact'>
                 <div className='text-zone'>
+                    <h1>Contact me</h1>
+                    <p>Feel free to contact me for job opportunities or to ask anything</p>
                     <div className='contact-form'>
                         <form ref={form} onSubmit={sendEmail}>
                             <ul>
@@ -58,6 +60,8 @@ const Contact = () => {
                     40129 Bologna
                     <br />
                     <span>augustoruggieri@gmail.com</span>
+                    <br />
+                    <span>+39 340 3890971</span>
                 </div>
 
                 <div className='map-wrap'>

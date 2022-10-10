@@ -17,13 +17,13 @@ const Home = () => {
       </div>
 
       <div className='slogan-container'>
-          <span>
+          <span className='slogan1'>
             <p>design</p>
           </span>
-          <span>
+          <span className='slogan2'>
             <p>develop</p>
           </span>
-          <span>
+          <span className='slogan3'>
             <p>improve</p>
           </span>
         </div>
