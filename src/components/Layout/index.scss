@@ -13,4 +13,15 @@
     top: 5%;
     left: 15%;
     margin: 0 auto;
+    
+    opacity: 0;
+    transform-style: preserve-3d;
+    animation: fadeIn 1s 1s forwards;
+}
+
+@media (max-width: 960px) {
+    
+    .container {
+        left: 10%;
+    }
 }

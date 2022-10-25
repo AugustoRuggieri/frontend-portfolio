@@ -1,5 +1,6 @@
 import React from 'react';
 import './index.scss';
+import 'animate.css';
 import { Outlet } from 'react-router-dom';
 import Sidebar from '../Sidebar';
 

@@ -1,18 +1,35 @@
 import React from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './index.scss'
 import HomeIcon from '@mui/icons-material/Home';
 import PersonIcon from '@mui/icons-material/Person';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import MenuIcon from '@mui/icons-material/Menu';
 
 const Sidebar = () => {
+
+    var activeDropDown = false;
+
+    const showDropDownMenu = (e) => {
+        activeDropDown = !activeDropDown
+        document.getElementById('dropdown-menu').style.display = activeDropDown ? 'block' : 'none'
+        document.getElementById('nav-bar').style.height = activeDropDown ? '240px' : '60px'
+    }
+
     return (
-        <div className='nav-bar'>
-            <Link className='logo'>
-                
-            </Link>
+        <div id='nav-bar'>
+            <div className='dropdown-icon' onTouchStart={(e) => showDropDownMenu(e)}>
+                <MenuIcon />
+            </div>
+            <div id='dropdown-menu'>
+                <ul>
+                    <NavLink to='/'><li>Home</li></NavLink>
+                    <NavLink to='/about'><li>About</li></NavLink>
+                    <NavLink to='/contact'><li>Contacts</li></NavLink>
+                </ul>
+            </div>
             <nav>
                 <NavLink to='/' className='nav-link'>
                     <HomeIcon className='icon' />
@@ -29,7 +46,7 @@ const Sidebar = () => {
                 <NavLink to='/contact' className='nav-link'>
                     <MailOutlineIcon className='icon' />
                     <span>
-                        <p className='slide-text'>Contact</p>
+                        <p className='slide-text'>Contacts</p>
                     </span>
                 </NavLink>
             </nav>
