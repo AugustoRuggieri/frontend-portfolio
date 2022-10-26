@@ -17,7 +17,6 @@
 }
 
 .text-home {
-
     padding-bottom: 20px;
 
     h3 {
@@ -37,6 +36,7 @@
             font-weight: 700;
             letter-spacing: 2px;
             padding: 10px 25px;
+            cursor: pointer;
 
             transition: .4s;
 
@@ -190,14 +190,44 @@
         .text-home {
             width: 100%;
         }
-
-        .photo {
-            display: none;
-        }
     }
 
     .slogan-container {
         right: 0;
         width: 100%;
+    }
+}
+
+@media (max-width: 960px) {
+    .header {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .text-home {
+        text-align: center;
+    }
+
+    .photo {
+        border: 3px solid #fff;
+        border-radius: 50%;
+        display: flex;
+        overflow: hidden;
+
+        img {
+
+            width: 150px;
+            height: auto;
+            opacity: .9;
+
+            animation: photoAppear 4s;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .slogan-container span p {
+        font-size: 16px;
     }
 }

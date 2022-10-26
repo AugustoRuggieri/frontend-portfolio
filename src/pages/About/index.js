@@ -11,28 +11,21 @@ const About = () => {
           <div className='text-about'>
             <h1>Hi!</h1>
             <div>
-              <p>My name is Augusto, I'm a front end web developer based in <span>Bologna, Italy.</span>
-                <br />
+              <p>My name is Augusto, I'm a front end web developer based in <span>Bologna, Italy. </span>
                 In 2016 I got a Master's Degree in Cinema and multimedia production,
-                <br />
                 then I started working as a <span>copywriter</span>, creating SEO-oriented content for websites.
               </p>
               <br /><br />
               <p>
                 Being curious towards computer science and coding,
-                <br />
                 after a few years I decided to discover what lies underneath the surface of a website.
-                <br />
                 In 2020 I started studying <span>HTML</span>, <span>CSS</span> and <span>Javascript</span> on my own.
-                <br />
                 Last year I also took a web development professional training course to learn how to use <span>React.Js.</span>
               </p>
               <br /><br />
               <p>
                 Since then, I focused on building and strengthening my skills, preparing myself for my first job in the IT field.
-                <br />
                 I work with <span>Visual Studio Code</span>, <span>npm</span>, <span>Firebase</span>, <span>Postman</span>, <span>Bootstrap</span>, <span>Material UI</span> and more.
-                <br />
                 I'm looking forward to join a company or a startup where to grow and keep challenging myself.
               </p>
             </div>

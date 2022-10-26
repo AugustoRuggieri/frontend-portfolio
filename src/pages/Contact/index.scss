@@ -181,12 +181,12 @@ textarea {
 // media queries
 
 @media screen and (max-width: 1200px) {
-    .map-wrap {
+    /* .map-wrap {
       float: none;
       margin: 0;
       width: 100%;
       height: 400px;
-    }
+    } */
     
     .info-map {
       display: none;
@@ -194,12 +194,20 @@ textarea {
   }
 
   @media (max-width: 960px) {
-    .contact {
-        display: flex;
-        flex-direction: column;
-
         .text-zone {
+            top: 25%;
             width: 100%;
+
+            .contact-form {
+                margin-top: 20px;
+            }
         }
-    }
+
+        .map-wrap {
+            position: absolute;
+            top: 450px;
+            width: 100%;
+            height: 320px;
+          }
+    
 }

@@ -24,10 +24,10 @@ const Contact = () => {
     return (
         <>
             <div className='container'>
-                <div className='contact'>
+                
                     <div className='text-zone'>
                         <h1>Contact me</h1>
-                        <p>Feel free to contact me for job opportunities or to ask anything</p>
+                        <p>Feel free to contact me for job opportunities or for more info about what I do.</p>
                         <div className='contact-form'>
                             <form ref={form} onSubmit={sendEmail}>
                                 <ul>
@@ -73,7 +73,7 @@ const Contact = () => {
                             </Marker>
                         </MapContainer>
                     </div>
-                </div>
+                
             </div>
             <div className="lds-ring"><div></div><div></div><div></div><div></div></div>
         </>

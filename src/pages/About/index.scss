@@ -1,6 +1,7 @@
 .text-about {
     position: absolute;
     top: 20%;
+    max-width: 50%;
 
     h1 {
         margin-bottom: 15px;
@@ -26,7 +27,6 @@
     height: 100%;
     width: 50%;
     padding-top: 18%;
-    overflow: hidden;
 }
 
 .cubespinner {
@@ -177,13 +177,17 @@
     .about {
         display: flex;
         flex-direction: column;
-        overflow: scroll;
+        min-height: 100vh;
 
         .text-about {
+            max-width: 100%;
             position: relative;
         }
 
         .stage-cube-cont {
+            min-height: 400px;
+            margin: 0 auto;
+            margin-top: 50px;
             position: relative;
         }
     }

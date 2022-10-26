@@ -116,7 +116,7 @@ nav {
 
     #nav-bar:hover {
         width: 180px;
-    
+
         .slide-text::before {
             animation: textslidein .8s ease forwards;
             animation-delay: .2s;
@@ -127,7 +127,7 @@ nav {
         display: none;
     }
 
-    .dropdown-menu {
+    #dropdown-menu {
         display: none;
     }
 }
@@ -142,6 +142,7 @@ nav {
         left: 0;
         z-index: 3;
         min-height: 0;
+        overflow: hidden;
 
         .dropdown-icon {
             color: #fff;
@@ -166,6 +167,7 @@ nav {
             display: block;
             position: absolute;
             top: 100%;
+            width: 100%;
         }
 
         #dropdown-menu ul a {
@@ -189,6 +191,12 @@ nav {
             border-bottom: none;
         }
 
+        #dropdown-menu ul li a {
+            display: block;
+            color: #fff;
+            width: 100%;
+        }
+
         #dropdown-menu ul li:hover {
             background: #333;
             color: #fff;
@@ -198,8 +206,28 @@ nav {
             display: none;
         }
 
+        .ext-links {
+            position: relative;
+            margin-top: 43px;
+            width: 25%;
+        }
+
         ul {
-            display: none;
+
+            flex-direction: row;
+
+            li {
+                margin-top: 0;
+                padding-left: 18px;
+                list-style-type: none;
+
+                span {
+                    display: none;
+                }
+            }
+
+
+
         }
     }
 }

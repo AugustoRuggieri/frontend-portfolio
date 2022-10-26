@@ -18,6 +18,12 @@ const Sidebar = () => {
         document.getElementById('nav-bar').style.height = activeDropDown ? '240px' : '60px'
     }
 
+    window.onclick = (e) => {
+        if(document.getElementById('dropdown-menu').contains(e.target)) {
+            showDropDownMenu()
+        }
+    }
+
     return (
         <div id='nav-bar'>
             <div className='dropdown-icon' onTouchStart={(e) => showDropDownMenu(e)}>
@@ -25,9 +31,21 @@ const Sidebar = () => {
             </div>
             <div id='dropdown-menu'>
                 <ul>
-                    <NavLink to='/'><li>Home</li></NavLink>
-                    <NavLink to='/about'><li>About</li></NavLink>
-                    <NavLink to='/contact'><li>Contacts</li></NavLink>
+                    <li>
+                        <NavLink to='/'>
+                            Home
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to='/about'>
+                            About
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to='/contact'>
+                            Contacts
+                        </NavLink>
+                    </li>
                 </ul>
             </div>
             <nav>
